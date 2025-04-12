@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>خدمات تركيا المتكاملة</title>
+  <style>
+    body { font-family: sans-serif; margin: 0; background-color: #f9f9f9; }
+    header { background-color: #e10600; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #fff; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    nav a { display: inline-block; margin: 15px; color: #333; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; text-align: center; }
+    h2 { color: #e10600; }
+    .icon-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px; }
+    .icon-box { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); cursor: pointer; transition: transform 0.3s ease; width: 150px; text-align: center; }
+    .icon-box:hover { transform: scale(1.05); }
+    .icon-box img { width: 50px; height: 50px; margin-bottom: 10px; }
+    .details-box { display: none; background: #fff; margin: 30px auto; padding: 20px; max-width: 600px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); text-align: right; }
+    .details-box.active { display: block; }
+    .whatsapp-btn { display: inline-block; margin-top: 15px; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; }
+    form input, form select, form textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 8px; border: 1px solid #ccc; }
+    form button { background-color: #e10600; color: white; padding: 10px 20px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>خدمات تركيا المتكاملة</h1>
+  <p>سياحة - علاج - تأشيرات - إقامة - قبولات جامعية - فنادق</p>
+</header>
+
+<nav>
+  <a href="#services">الخدمات</a>
+  <a href="#request">أرسل طلبك</a>
+</nav>
+
+<section id="services">
+  <h2>اختر نوع الخدمة</h2>
+  <div class="icon-grid">
+    <div class="icon-box" onclick="showDetails('tourism')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="السياحة">
+      <p>السياحة</p>
+    </div>
+    <div class="icon-box" onclick="showDetails('treatment')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="العلاج">
+      <p>العلاج</p>
+    </div>
+    <div class="icon-box" onclick="showDetails('visa')">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="الفيزا">
+      <p>الفيزا</p>
+    </div>
+    <div class="icon-box" onclick="showDetails('residence')">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="الإقامة">
+      <p>الإقامة</p>
+    </div>
+    <div class="icon-box" onclick="showDetails('university')">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135731.png" alt="القبولات الجامعية">
+      <p>قبولات جامعية</p>
+    </div>
+    <div class="icon-box" onclick="showDetails('airport')">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="توصيل مطار">
+      <p>توصيل من وإلى المطار</p>
+    </div>
+    <div class="icon-box" onclick="showDetails('hotels')">
+      <img src="https://cdn-icons-png.flaticon.com/512/2356/2356898.png" alt="حجز فنادق">
+      <p>حجز فنادق</p>
+    </div>
+  </div>
+
+  <div id="tourism" class="details-box">
+    <h3>خدمات السياحة</h3>
+    <p>حجز فنادق، تنظيم جولات، سائق خاص، برامج عائلية وموسمية مميزة.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">اطلب الخدمة عبر واتساب</a>
+  </div>
+
+  <div id="treatment" class="details-box">
+    <h3>الخدمات العلاجية</h3>
+    <p>تنسيق مواعيد مع أفضل المستشفيات في مجالات زراعة الشعر، التجميل، الأسنان، وأكثر.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">اطلب الخدمة عبر واتساب</a>
+  </div>
+
+  <div id="visa" class="details-box">
+    <h3>خدمات الفيزا</h3>
+    <p>تقديم طلبات تأشيرات سياحية، علاجية، تعليمية بخطوات مبسطة وسريعة.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">اطلب الخدمة عبر واتساب</a>
+  </div>
+
+  <div id="residence" class="details-box">
+    <h3>خدمات الإقامة</h3>
+    <p>استخراج وتجديد الإقامات السياحية، العقارية، العائلية، إقامة العمل، والإقامة الطلابية.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">اطلب الخدمة عبر واتساب</a>
+  </div>
+
+  <div id="university" class="details-box">
+    <h3>القبولات الجامعية</h3>
+    <p>مساعدتك في الحصول على قبول جامعي رسمي في الجامعات التركية الحكومية والخاصة، مع الدعم الكامل في التسجيل والملف.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">احصل على قبول الآن</a>
+  </div>
+
+  <div id="airport" class="details-box">
+    <h3>توصيل من وإلى المطار</h3>
+    <p>خدمة نقل من المطار إلى الفندق أو الإقامة بسيارات مريحة وسائقين محترفين، تشمل الترحيب في المطار.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">احجز التوصيل عبر واتساب</a>
+  </div>
+
+  <div id="hotels" class="details-box">
+    <h3>حجز الفنادق</h3>
+    <p>نقوم بحجز فنادق بأسعار مميزة في كافة المدن التركية، مع خيارات متنوعة تناسب جميع الميزانيات.</p>
+    <a class="whatsapp-btn" href="https://wa.me/905526058765" target="_blank">احجز فندقك الآن</a>
+  </div>
+</section>
+
+<section id="request">
+  <h2>أرسل طلبك الآن</h2>
+  <form onsubmit="sendToWhatsApp(event)">
+    <input type="text" id="name" placeholder="الاسم الكامل" required>
+    <input type="text" id="nationality" placeholder="الجنسية" required>
+    <input type="number" id="age" placeholder="العمر" required>
+    <select id="service" required>
+      <option value="">اختر نوع الخدمة المطلوبة</option>
+      <option>سياحة</option>
+      <option>علاج</option>
+      <option>تأشيرة</option>
+      <option>إقامة</option>
+      <option>قبول جامعي</option>
+      <option>توصيل من وإلى المطار</option>
+      <option>حجز فندق</option>
+      <option>أخرى</option>
+    </select>
+    <textarea id="notes" placeholder="ملاحظات إضافية (اختياري)" rows="4"></textarea>
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 جميع الحقوق محفوظة - خدمات تركيا المتكاملة
+</footer>
+
+<script>
+  function showDetails(id) {
+  const boxes = document.querySelectorAll('.details-box');
+  boxes.forEach(box => box.style.display = 'none');
+  const detail = document.getElementById(id);
+  if (detail) {
+    const iconBox = document.querySelector(`.icon-box[onclick="showDetails('${id}')"]`);
+    if (iconBox && detail) {
+      iconBox.appendChild(detail);
+      detail.style.display = 'block';
+    }
+  }
+}
+
+  function sendToWhatsApp(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const nationality = document.getElementById('nationality').value;
+    const age = document.getElementById('age').value;
+    const service = document.getElementById('service').value;
+    const notes = document.getElementById('notes').value;
+
+    const confirmSend = confirm("هل أنت متأكد من إرسال هذا الطلب عبر واتساب؟");
+    if (!confirmSend) return;
+
+    const message = `مرحبًا، أود تقديم طلب:\nالاسم: ${name}\nالجنسية: ${nationality}\nالعمر: ${age}\nالخدمة المطلوبة: ${service}\nملاحظات: ${notes}`;
+    const url = `https://wa.me/905526058765?text=${encodeURIComponent(message)}&app_absent=0`;
+    window.open(url, '_blank');
+  }
+</script>
+
+</body>
+</html>
